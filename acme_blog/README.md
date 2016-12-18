@@ -1,4 +1,4 @@
-Validating Doctrine Entities in the Model Layer with PHP Traits
+# Validating Doctrine Entities in the Model Layer with PHP Traits
 ==============================================================
 
 * Author: Jordi Bassagañas, [programarivm.com](http://programarivm.com)
@@ -263,6 +263,6 @@ Once the `AcmeEntity` trait is ready to be used, just add one single line of cod
 
     use AcmeEntity;
 
-## Conclusion
+# Conclusion
 
 Congratulations! You've learned how to move Doctrine entities' validation logic from the controller layer to the business layer. Specifically, we've written it into a PHP trait in order to benefit from code reuse as well as make our app's models and controllers skinny. We've injected Symfony's validation service into the trait's `validate` method.
