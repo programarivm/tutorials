@@ -77,7 +77,9 @@ Note that we're running this example in the `indexAction` of the `DefaultControl
       (array) $comment->validate($this->get('validator'))
     );
 
-The `validate` method returns an array of error messages, otherwise if everything goes OK it's `null`. Therefore, since the code above meets all validation rules, we'll get this message: `The entities were validated and persisted!` Nevertheless, if the input is changed for whatever reason as it is shown below:
+The `validate` method returns an array of error messages, otherwise if everything goes OK it's `null`. Therefore, since the code above meets all validation rules, we'll get this message: `The entities were validated and persisted!`
+
+If the input is changed for whatever reason as it is shown below:
 
     $post = new BlogPost();
 
