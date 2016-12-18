@@ -1,0 +1,29 @@
+# src/AppBundle/Resources/config/validation.yml
+AppBundle\Entity\BlogPost:
+    properties:
+        title:
+            - NotBlank:
+                message: The post title is required.
+        content:
+            - NotBlank:
+                message: The post content must not be empty.
+        createdAt:
+            - NotBlank:
+                message: The post's creation date must be set.
+
+AppBundle\Entity\BlogComment:
+    properties:
+        post:
+            - NotNull:
+                message: This comment needs to have an associated post.
+        author:
+            - NotBlank:
+                message: The author field must not be blank.
+        email:
+            - NotBlank: ~
+            - Email:
+                message: The email {{ value }} is not a valid email.
+        url:
+            - NotBlank: ~
+            - Url:
+                message: The url {{ value }} is not a valid url.
