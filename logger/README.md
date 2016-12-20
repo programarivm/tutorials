@@ -67,6 +67,6 @@ Writing data is a piece of cake! Just fill an array -- or arrays -- with the dat
       'created_at' => new \DateTime("now")
     ];
 
-And proceed as shown below:
+And run the `write` method:
 
     $logger->write($data01)->write($data02);
