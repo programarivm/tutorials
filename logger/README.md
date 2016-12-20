@@ -47,7 +47,7 @@ Here is how the whole thing looks from a functional perspective.
     }
 }
 
-Note that we're running this example in the `indexAction` of the `DefaultController`. In a nutshell, we're getting a singleton instance of our logger. Then, we inject Doctrine's entity manager along with the entity of your choice.
+Note that we're running this example in the `indexAction` of the `DefaultController`. In a nutshell, we're getting a singleton instance of our logger. And then we inject Doctrine's entity manager along with the entity of your choice.
 
     $logger = Logger::getInstance()->init(
       $this->getDoctrine()->getManager(),
