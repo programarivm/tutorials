@@ -1,5 +1,5 @@
 # Validating Doctrine Entities in the Model Layer with PHP Traits
-==============================================================
+=================================================================
 
 * Author: Jordi Bassagañas, [programarivm.com](http://programarivm.com)
 
