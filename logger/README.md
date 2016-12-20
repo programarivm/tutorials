@@ -3,7 +3,7 @@
 
 * Author: Jordi Bassagañas, [programarivm.com](http://programarivm.com)
 
-Have you ever needed to log information into a MySQL database via Doctrine entities? In today's tutorial we are building a very simple logger that is able to communicate with the underlying table of your choice. We'll be relying on two well-known software design patterns: Singleton and Dependency Injection.
+Have you ever needed to log information into a MySQL database via Doctrine entities? If so, keep reading. In today's tutorial we are building a very simple logger that is able to communicate with the underlying table of your choice. We'll be relying on two well-known software design patterns: Singleton and Dependency Injection.
 
 ## How does this work?
 
