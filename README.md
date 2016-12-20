@@ -8,4 +8,4 @@ This repo is intended to hold a few tutorials on Web-related topics that I'd lik
 
 - [Validating Doctrine Entities in the Model Layer with PHP Traits](https://github.com/programarivm/tutorials/blob/master/acme_blog/README.md)
 
-- [Wrapping Doctrine Entities into a Custom Singletonized Logger](https://github.com/programarivm/tutorials/blob/master/logger/README.md)
+- [Wrapping Doctrine Entities into a Singletonized Logger](https://github.com/programarivm/tutorials/blob/master/logger/README.md)
