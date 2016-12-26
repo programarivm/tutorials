@@ -3,9 +3,7 @@
 
 * Author: Jordi Bassagañas, [programarivm.com](http://programarivm.com)
 
-It's not uncommon to find dozens of Symfony examples out there showing how to validate Doctrine entities from within an MVC controller -- for documentation and learning purposes, I guess.
-
-However, shouldn't that logic be moved to the model layer since its very nature is business logic? And what about the skinny controller/model pattern?
+It's not uncommon to find dozens of Symfony examples out there showing how to validate Doctrine entities from within an MVC controller -- for documentation and learning purposes. However, shouldn't that logic be moved to the model layer since its very nature is business logic? And what about the skinny controller/model pattern?
 
 I think it should!
 
