@@ -1,0 +1,42 @@
+AppBundle\Entity\AclEntry:
+    type: entity
+    repositoryClass: AppBundle\Repository\AclEntry
+    table: acl_entry
+    indexes:
+        acl_role_id:
+            columns:
+                - acl_role_id
+        acl_resource_id:
+            columns:
+                - acl_resource_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        aclRole:
+            targetEntity: AclRole
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                acl_role_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        aclResource:
+            targetEntity: AclResource
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                acl_resource_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
